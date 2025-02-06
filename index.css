@@ -1,0 +1,446 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:linear-gradient(to top, rgba(5, 6, 12, 0.973), rgb(2, 14, 78));
+background-position: center;
+background-repeat: no-repeat;
+
+background-size: cover;
+font-family:cursive;
+}
+#hero{
+    min-height: 100vh;
+    color: wheat;
+    padding: 1em;
+}
+.navbar{
+    background:linear-gradient(to top, rgba(184, 40, 40, 0.171), rgba(21, 43, 167, 0.233));
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    justify-self: center;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+}
+.navbar ul li{
+    list-style: none;
+    padding-right: 3em;
+}
+.navbar ul img{
+    display: none;
+}
+#home{
+    border: 1px solid wheat;
+    border-radius: 5px;
+    padding: 5px;
+}
+.navbar a{
+    text-decoration: none;
+    color: wheat;
+}
+.navbar a:hover{
+    border-bottom: 1px solid wheat;
+    padding: 2px;
+    color: rgb(16, 104, 219);
+    transition: 0.3s ease-in-out;
+}
+.navbar button{
+    background: rgb(16, 104, 219);
+    color: wheat;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.navbar button:hover{
+    background: wheat;
+    color: black;
+    transition: 0.5s ease-in;
+}
+.container-1{
+    padding: 3em;
+
+}
+.container-1 h1{
+    animation: slide 1s ease 0s 1;
+}
+#p1{
+    animation: slide 3s ease 0s 1;
+}
+#p2{
+    animation: slide 4s ease 0s 1;
+}
+#p3{
+    animation: slide 5s ease 0s 1;
+}
+#p4{
+    animation: slide 6s ease 0s 1;
+}
+#p5{
+    animation: slide 2s ease 0s 1;
+}
+.container-1 img{
+    width: 300px;
+    height: 300px;
+    float: right;
+    right: 10px;
+    top: 100px;
+    background:linear-gradient(to top, rgba(184, 40, 40, 0.171), rgba(21, 43, 167, 0.233));
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    animation:float 4s ease 0s infinite;
+}
+.container-1 img:hover{
+    animation: jump 0.5s ease 0s infinite;
+    box-shadow: 5px 5px 50px rgba(184, 40, 40, 0.171);
+}
+@keyframes jump {
+    100%{
+        transform: translateY(40px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    0%{
+        transform: translateY(40px);
+    }
+}
+@keyframes float {
+    100%{
+        transform: translateY(50px);
+    }
+    50%{
+        transform: translateX(50px);
+    }
+    0%{
+        transform: translateY(50px);
+    }
+
+}
+#hero-btn{
+    align-self: center;
+    display: flex;
+    margin-top: 100px;
+    padding: 10px;
+}
+#hero-btn button{
+    padding: 10px;
+    background:linear-gradient(to right, rgb(240, 85, 85), rgb(61, 86, 230));
+    color: wheat;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+#hero-btn button:hover{
+    background:linear-gradient(to left, rgb(240, 85, 85), rgb(61, 86, 230));
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
+    font-weight: bold;
+    animation:bounce 3s ease-in-out 0s 1;
+    transition: 0.5s ease-in-out;
+}
+#about{
+    min-height: 100vh;
+    color: wheat;
+    padding: 1em;
+}
+.box-1{
+    min-height: 30vh;
+    text-align: center;
+}
+.box-2{
+    text-align: center;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding: 1em;
+}
+.card{
+    width: 300px;
+    height: max-content;
+    margin: 10px;
+    background:linear-gradient(to top, rgba(184, 40, 40, 0.171), rgba(21, 43, 167, 0.233));
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+}
+.card img{
+    width: 40px;
+    height: 40px;
+    background: rgb(16, 133, 201);
+    border-radius: 10px;
+}
+.card h3{
+    border-bottom:1px solid wheat;
+}
+.card ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+.card a{
+    text-decoration:underline;
+    color: wheat;
+}
+.card a:hover{
+    color:rgb(16, 104, 219);
+    text-decoration: none;
+    font-size: large;
+    transition: 0.3s ease-in-out;
+}
+#PL-logos{
+    padding: 10px;
+    margin: 5px;
+    justify-items: space-evenly;
+    overflow:auto;
+}
+#PL-logos img:hover{
+    animation: none;
+}
+#PL-logos img{
+    margin: 5px;
+    animation: run 5s ease 0s infinite;
+}
+@keyframes run {
+    100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-150px);
+    }
+    0%{
+        transform: translateY(0px);
+    }
+}
+#PL--logos{
+    padding: 10px;
+    margin: 5px;
+    justify-items: space-evenly;
+    overflow:auto;
+}
+#PL--logos img{
+    margin: 5px;
+    animation: -run 5s ease 0s infinite;
+}
+@keyframes -run {
+    100%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-250px);
+    }
+    0%{
+        transform: translateX(0px);
+    }
+}
+#contact{
+    min-height: 100vh;
+    color: wheat;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+#contact h1{
+    color:rgb(16, 104, 219) ;
+}
+.login-container{
+    margin-top: 50px;
+    width:max-content;
+    height:auto;
+    align-self: center;
+    display: grid;
+    gap: 10px;
+    border-radius: 30px;
+    background:linear-gradient(to top, rgba(184, 40, 40, 0.171), rgba(21, 43, 167, 0.233));
+    box-shadow: 5px 5px 5px black;
+    padding: 2em;
+}
+.login-container input{
+    padding: 20px;
+    margin-top: 10px;
+    color: wheat;
+    background:none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid wheat;
+}
+.login-container input::placeholder{
+    color: wheat;
+}
+.login-container input:hover{
+    border: 1px solid rgb(16, 104, 219);
+    transition: 0.5s ease-in-out;
+    border-radius: 20px;
+}
+.login-container fieldset{
+    padding: 5px;
+    color: rgb(16, 104, 219);
+    border: 1px dashed wheat;
+}
+.login-container textarea{
+    background: none;
+    padding: 10px;
+    color: rgb(16, 104, 219);
+    border: none;
+}
+.login-container button{
+    justify-self: center;
+    width: 200px;
+    padding: 10px;
+    background: rgb(16, 104, 219);
+    color: wheat;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    animation: slide 2s ease 0s 1;
+}
+@keyframes slide {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+.login-container button:hover{
+    background: wheat;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+.contact-info fa{
+    padding: 10px;
+}
+.fa-brands{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: wheat;
+    animation: slide 2s ease 0s 1;
+}
+.fa-brands:hover{
+    background:rgb(16, 104, 219);
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+@keyframes bounce {
+    100%{
+        transform: translateX(5px);
+    }
+    0%{
+        transform: translateX(2px);
+    }
+    
+}
+@media (max-width:700px){
+    .box-2{
+        min-height: 50vh;
+        display: grid;
+        gap: 1em;
+        padding: 1em;
+    }
+    .navbar{
+        background:linear-gradient(to top, rgba(184, 40, 40, 0.171), rgba(21, 43, 167, 0.233));
+        min-width: 10px;
+        min-height: 200px;
+        border-radius: 10px;
+        display: block;
+        position: fixed;
+        justify-self: center;
+        right: 10px;
+    }
+    .navbar ul img{
+        width: 30px;
+        height: 30px;
+        display: block;
+        justify-self: center;
+    }
+    @keyframes bounce {
+        100%{
+            transform: translateX(5px);
+        }
+        50%{
+            transform: translateX(0);
+        }
+        0%{
+            transform: translateX(5px);
+        }
+        
+    }
+    .navbar ul{
+        display: grid;
+        gap: 20px;
+    }
+    /*.navbar ul li{
+        list-style: none;
+        padding-right: 3em;
+    }*/
+    .navbar a{
+        animation: bounce 3s ease 0s infinite;
+        display: block;
+        text-decoration: none;
+        color: wheat;
+    }
+    .navbar a:hover{
+        color:rgb(16, 104, 219) ;
+        animation: none;
+        transition: 0.5s ease-in-out;
+    }
+    #hero-btn{
+        align-self: center;
+        display: grid;
+        margin-top: 100px;
+    }
+    .container-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-1 img{
+        margin-top: 10px;
+        width: 200px;
+        height: 200px;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        box-shadow: 2px  2px 2px rgb(0, 0, 0);
+        animation:rotate 5s ease 0s infinite;
+    }
+    @keyframes rotate {
+        100%{
+            transform: translateX(40px);
+        }
+        50%{
+            transform: translateX(0px);
+        }
+        0%{
+            transform: translateX(40px);
+        }
+    }
+    .login-container{
+        width:max-content;
+        height:auto;
+        align-self: center;
+        display: grid;
+        gap: 10px;
+        border-radius: 30px;
+        background:linear-gradient(to top, rgba(184, 40, 40, 0.171), rgba(21, 43, 167, 0.233));
+        box-shadow: 5px 5px 5px black;
+        padding: 1em;
+    }
+}
